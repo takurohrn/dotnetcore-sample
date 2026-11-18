@@ -1,0 +1,49 @@
+{
+  "name": "gerrymander-game",
+  "version": "1.0.0",
+  "main": "index",
+  "dependencies": {
+    "@expo/metro-runtime": "~58.0.17",
+    "@shopify/react-native-skia": "2.14.0",
+    "@turf/helpers": "^7.4.0",
+    "@turf/union": "^7.4.0",
+    "expo": "~58.0.26",
+    "expo-constants": "~58.0.16",
+    "expo-file-system": "~58.0.14",
+    "expo-linking": "~58.0.17",
+    "expo-router": "~58.0.32",
+    "expo-sqlite": "~58.0.18",
+    "expo-status-bar": "~58.0.5",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-reanimated": "4.7.1",
+    "react-native-safe-area-context": "~5.11.1",
+    "react-native-screens": "~4.30.1",
+    "react-native-web": "~0.21.4",
+    "react-native-worklets": "0.13.0",
+    "zustand": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^26.6.6",
+    "@types/react": "~19.3.0",
+    "@types/topojson-client": "^3.1.5",
+    "mapshaper": "^0.8.5",
+    "topojson-client": "^3.1.0",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "setup-skia-web public && expo start --web",
+    "build:geo": "tsx scripts/build-geo.ts",
+    "build:parts": "tsx scripts/build-parts.ts",
+    "score": "tsx scripts/score-sample.ts",
+    "test": "tsx --test src/**/*.test.ts",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p scripts"
+  },
+  "private": true
+}

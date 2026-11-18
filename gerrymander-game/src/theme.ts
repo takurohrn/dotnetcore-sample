@@ -1,0 +1,16 @@
+export const colors = {
+  bg: '#f6f1e4',
+  card: '#fffdf7',
+  ink: '#2b2a27',
+  sub: '#6f6a5d',
+  line: '#d9d1bd',
+  primary: '#2f7d4f',
+  primaryInk: '#ffffff',
+  danger: '#b3402f',
+  sea: '#cfe3ea',
+  land: '#f1ecdc',
+  border: '#b9b199',
+  prefBorder: '#6f6a5d',
+  selected: '#2f7d4f',
+  candidate: '#f2c94c',
+};
